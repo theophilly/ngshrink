@@ -74,8 +74,9 @@ header a {
   padding: 0 10px;
 }
 .searchContainer i {
-  color: black;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  margin-left: 4px;
 }
 .searchContainer input {
   border: none;
@@ -85,6 +86,9 @@ header a {
   margin-left: 10px;
 }
 .searchContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 5px;
   font-size: 1rem;
   background: white;
@@ -93,7 +97,7 @@ header a {
   background: #0067f4;
   border: none;
   border-radius: 3.5rem;
-  min-width: 7rem;
+  width: 7rem;
   max-height: 2rem;
 }
 .dataTable {
@@ -111,4 +115,27 @@ td {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+@media Screen and (max-width: 450px) {
+  header a {
+    display: none;
+  }
+  .searchContainer span {
+    display: none;
+  }
+  .searchContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-size: 1rem;
+    background: white;
+    padding-top: 7px;
+    color: white;
+    background: #0067f4;
+    border: none;
+    border-radius: 3.5rem;
+    max-width: auto;
+  }
 }

@@ -45,7 +45,7 @@ function SearhSection({ addShrinkData, currentSet }) {
           shrink();
         }}
       >
-        Shrink
+        <span>Shrink</span> <i class="fas fa-share-square"></i>
       </button>
     </div>
   );
