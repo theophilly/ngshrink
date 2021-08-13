@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import ReactNotification from "react-notifications-component";
-import "react-notifications-component/dist/theme.css";
-import Header from "../components/Header";
-import SearhSection from "../components/SearhSection";
+import React, { useState } from 'react';
+import ReactNotification from 'react-notifications-component';
+import 'react-notifications-component/dist/theme.css';
+import Header from '../components/Header';
+import SearhSection from '../components/SearhSection';
 
 function Home() {
   const [table, setTable] = useState([]);
@@ -35,7 +35,9 @@ function Home() {
                     <td>{value.val}</td>
                     <td>{value.full}</td>
                     <td>
-                      <a href={value.short}>{value.short}</a>
+                      <a target="_blank" href={value.short}>
+                        {value.short}
+                      </a>
                     </td>
                   </tr>
                 ))}

@@ -28,10 +28,10 @@ function Header(props) {
           <i className="fas fa-arrow-down"></i>
         </li>
         <li>
-          <a href="https://myreactprofile.netlify.app/">My Profile</a>{' '}
+          <a href="https://myreactprofile.netlify.app/">My Profile</a>
           <i className="fas fa-user"></i>
         </li>
-        <li id="recommend">
+        <li>
           <a href="#">Github</a>
           <i className="fab fa-github"></i>
         </li>
