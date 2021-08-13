@@ -1,5 +1,5 @@
-import React from "react";
-import { store } from "react-notifications-component";
+import React from 'react';
+import { store } from 'react-notifications-component';
 
 function SearhSection({ addShrinkData, currentSet }) {
   let dat;
@@ -8,13 +8,13 @@ function SearhSection({ addShrinkData, currentSet }) {
 
     if (!regexp.test(username.current.value)) {
       store.addNotification({
-        title: "Alert!",
-        message: "This is not a valid Url",
-        type: "danger",
-        insert: "top",
-        container: "top-center",
-        animationIn: ["animate__animated", "animate__fadeIn"],
-        animationOut: ["animate__animated", "animate__fadeOut"],
+        title: 'Alert!',
+        message: 'This is not a valid Url',
+        type: 'danger',
+        insert: 'top',
+        container: 'top-center',
+        animationIn: ['animate__animated', 'animate__fadeIn'],
+        animationOut: ['animate__animated', 'animate__fadeOut'],
         dismiss: {
           duration: 5000,
           onScreen: true,
@@ -37,7 +37,7 @@ function SearhSection({ addShrinkData, currentSet }) {
   let username = React.createRef();
   return (
     <div className="searchContainer">
-      <i className="fas fa-link"></i>
+      <i style={{ color: 'tomato' }} className="fas fa-link"></i>
       <input ref={username} placeholder="Paste a long Url"></input>
       <button
         onClick={(e) => {
@@ -45,7 +45,7 @@ function SearhSection({ addShrinkData, currentSet }) {
           shrink();
         }}
       >
-        <span>Shrink</span> <i class="fas fa-share-square"></i>
+        <span>Shrink</span> <i className="fas fa-share-square"></i>
       </button>
     </div>
   );

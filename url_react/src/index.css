@@ -1,14 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .App {
@@ -39,21 +40,46 @@ header {
 header div {
   font-size: 2.2rem;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }
 header div span {
   color: rgb(15, 167, 15);
 }
-header a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
+header input {
+  display: none;
+}
+header #nav-icon {
+  display: none;
+}
+header #nav-icon .menu-icon {
+  backface-visibility: hidden;
+  display: block;
+  height: 3px;
+  min-width: 25px;
+  margin: 3px;
   background: white;
-  padding: 10px;
-  border: none;
-  border-radius: 2.4rem;
-  width: 8rem;
-  max-height: 2.3rem;
-  text-align: center;
+  transition: all 0.55s;
+}
+header ul {
+  display: flex;
+  transition: all 2s;
+}
+header ul li {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin-right: 10px;
+}
+header ul li:hover {
+  /* color: blue; */
+}
+header ul li:hover a {
+  /* color: tomato; */
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
 }
 .searchSection {
   display: flex;
@@ -62,6 +88,7 @@ header a {
 }
 .searchSection p {
   color: white;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 .searchContainer {
@@ -117,9 +144,31 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-@media Screen and (max-width: 450px) {
-  header a {
+@media Screen and (max-width: 700px) {
+  header #nav-icon {
+    display: block;
+    margin-top: 12px;
+  }
+  header ul {
     display: none;
+    opacity: 0;
+  }
+
+  #menu:checked ~ ul li {
+    padding: 10px 5px;
+  }
+
+  #menu:checked ~ ul {
+    display: block;
+    opacity: 1;
+    width: 100vw;
+    position: absolute;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(16, 80, 168), rgb(60, 50, 151));
+    left: 0;
+    top: 60px !important;
+    z-index: 99;
+    padding: 0px 0px 0px 20px;
   }
   .searchContainer span {
     display: none;
