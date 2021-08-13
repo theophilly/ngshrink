@@ -24,7 +24,7 @@ function Header(props) {
 
       <ul>
         <li>
-          <a href="./assets/cv.pdf">Download CV</a>
+          <a href="./cv.pdf">Download CV</a>
           <i className="fas fa-arrow-down"></i>
         </li>
         <li>
@@ -32,7 +32,7 @@ function Header(props) {
           <i className="fas fa-user"></i>
         </li>
         <li>
-          <a href="#">Github</a>
+          <a href="https://github.com/theophilly/ngshrink">Github</a>
           <i className="fab fa-github"></i>
         </li>
       </ul>

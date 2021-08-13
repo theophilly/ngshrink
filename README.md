@@ -1,4 +1,4 @@
-# NGShrink Mern App (Express.js / React / Redux / MongoDB)
+# NGShrink Mern App (Express.js / React)
 
 Ngshrink is a web app made with react js on the frontend and a
 node express server on the backend. It turn long urls into
@@ -16,7 +16,7 @@ I built this App based on the mern stack (Express.js / React ).
 
 ### Backend :
 
-- The backend is built with node.js , [express.js Framework](https://expressjs.com/), [MongoDb Database](https://www.digitalocean.com/products/managed-databases-mongodb/) and Amazon S3 for data storage
+- The backend is built with node.js , [express.js Framework](https://expressjs.com/)
 
 ### Frontend :
 
