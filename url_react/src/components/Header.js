@@ -24,11 +24,7 @@ function Header(props) {
 
       <ul>
         <li>
-          <a href="./cv.pdf">Download CV</a>
-          <i className="fas fa-arrow-down"></i>
-        </li>
-        <li>
-          <a href="https://myreactprofile.netlify.app/">My Profile</a>
+          <a href="https://myreactprofile.netlify.app/">About Me</a>
           <i className="fas fa-user"></i>
         </li>
         <li>
